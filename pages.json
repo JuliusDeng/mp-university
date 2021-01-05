@@ -1,0 +1,80 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/course/course",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/notice/notice",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/exam/exam",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "哈理工校园小程序",
+		"navigationBarBackgroundColor": "#0081ff"
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#d4237a",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index-ac.png"
+			}, {
+				"pagePath": "pages/course/course",
+				"text": "课表",
+				"iconPath": "static/tabbar/community.png",
+				"selectedIconPath": "static/tabbar/community-ac.png"
+			}, {
+				"pagePath": "pages/notice/notice",
+				"text": "公告",
+				"iconPath": "static/tabbar/course.png",
+				"selectedIconPath": "static/tabbar/course-ac.png"
+			},
+			{
+				"pagePath": "pages/exam/exam",
+				"text": "考试",
+				"iconPath": "static/tabbar/edu.png",
+				"selectedIconPath": "static/tabbar/edu-ed.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/personal.png",
+				"selectedIconPath": "static/tabbar/personal-ac.png"
+			}
+		]
+	}
+}
